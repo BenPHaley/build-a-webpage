@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-In</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/first_style.css')}}">
+
+        <style>
+            fieldset {
+                margin-left : 450px;
+                margin-right : 450px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Sign-In</h1>
+        <ul>
+            <li><a href="/" title="Home">Home</a></li>
+            <li><a href="/about" title="Learn about who Ben Haley is and who he will be in the future">About</a></li>
+            <li><a href="/signin" title="Sign in to your account">Sign-In</a></li>
+        </ul>
+        <br>
+        <br>
+
+        <div align="center">
+            <!--Making a sign-in form using -->
+            <form action="/authorize.php" method="post">
+                <fieldset>
+                    <legend>Sign-In</legend>
+                    Username:<br>
+                    <input type="text" name="username">
+                    <br>
+                    Password:<br>
+                    <input type="password" name="password">
+                    <br>
+                    <input type="submit" value="Sign-in">
+                </fieldset>
+            </form>
+        </div>
+
+    </body>
+
+</html>

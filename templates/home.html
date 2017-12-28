@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <!--Things in the head are not displayed on the webpage-->
+    <!--The title element puts a label on the tab-->
+    <head>
+        <title>First Webpage</title>
+        <!--Defines the language. utf-8 supports practically everything-->
+        <meta charset="utf-8">
+        <!-- For Python code to link CSS in external folder to html -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/first_style.css') }}">
+        <!--This links my CSS file to my html
+        <link rel="stylesheet" href="first_style.css">
+         This is when the file is run alone -->
+    </head>
+
+    <!--Everything in the body is shown on the webpage.-->
+    <body>
+        <header>
+            <h1>Ben's Masterpiece</h1>
+        </header>
+        <ul>
+            <li><a href="/" title="Home">Home</a></li>
+            <li><a href="/about" title="Learn about who Ben Haley is and who he will be in the future">About</a></li>
+            <li><a href="/signin" title="Sign in to your account">Sign-In</a></li>
+        </ul>
+        <br>
+        <img src="{{ url_for('static', filename='images/card1.jpg') }}" alt="Meme of Dwight from The Office T.V. series. Age is just a number. False, age is a word.">
+        <p>
+            This semester I am rooming with 3 roommates.<br>
+            Their names are:<br>
+            <ul style >
+                <li>Evan Richards</li>
+                <li>Gunnar Henson</li>
+                <li>Batu Balimtus</li>
+            </ul>
+            Evan has a Netflix's account. So during lunch I<br>
+            have started to watch <a href="https://www.youtube.com/watch?v=LHOtME2DL4g">The Office</a>.<br>
+            The show is a lot of fun to watch and it helps me<br>
+            relax after a long day of classes.<br>
+        </p>
+    </body>
+</html>
