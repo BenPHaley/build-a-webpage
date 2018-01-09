@@ -14,6 +14,10 @@ def about():
 def signin():
     return render_template("signin.html")
 
+@app.route('/authorize.php')
+def authorize():
+    return render_template("authorize.php")
+
 
 
 
